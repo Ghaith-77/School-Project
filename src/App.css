@@ -9,21 +9,19 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: linear-gradient(45deg, rgba(231,157,22,1) 0%, rgba(250,247,194,1) 100%);
+  background: linear-gradient(45deg, rgba(231,157,22,1) 0%, #faf7c2 100%);
 }
 .footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: linear-gradient(45deg, rgba(231,157,22,1) 0%, rgba(250,247,194,1) 100%);
+  background: linear-gradient(45deg, #e79d16 0%, rgba(250,247,194,1) 100%);
 }
 .page {
   height: max-content;
   min-height: 70vh;
 }
 .app {
-  background-image: url(./images/mainBackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-image: url(./images/mainBackground.jpg); */
+  background-color: #ffe2ab63;
 }

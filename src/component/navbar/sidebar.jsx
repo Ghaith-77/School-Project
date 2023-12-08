@@ -10,12 +10,13 @@ function Sidebar() {
 
   return (
     <div >
-      <Button variant="primary" onClick={handleShow} className="me-2">
-        dfsa
-      </Button>
-      <Button variant="primary" onClick={handleShow} className="me-2">
-        dfsa
-      </Button>
+      <button style={{backgroundColor:"#eec15b",padding:"5px 40px",border:"none",color:"white"}} onClick={handleShow} className="me-2">
+        القائمة
+      </button>
+      <button style={{backgroundColor:"#eec15b",padding:"5px 40px",border:"none",color:"white"}} onClick={handleShow} className="me-2">
+        المصادر 
+      </button>
+   
       <Offcanvas  show={show} onHide={handleClose} >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
