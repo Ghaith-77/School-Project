@@ -1,6 +1,6 @@
 import React from "react";
 import main_image from "../images/mainBackground.jpg";
-
+import mainback_background from "../images/mainback-background.png";
 const Main = () => {
   return (
     <div className="container page d-flex justify-content-between  align-items-center ">
@@ -12,9 +12,9 @@ const Main = () => {
       </div>
       <div
         style={{ width: "50%" }}
-        className=" rounded rounded-sm overflow-hidden  bg-danger "
       >
-        <img width={"100%"} src={main_image} alt="" />
+        <img width={"100%"} src={main_image} alt=""  />
+     
       </div>
     </div>
   );
