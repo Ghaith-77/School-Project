@@ -1,20 +1,32 @@
 import React from "react";
 import main_image from "../images/mainBackground.jpg";
-import mainback_background from "../images/mainback-background.png";
+import Mainman from "../images/mainMan.jpeg";
+
 const Main = () => {
   return (
     <div className="container page d-flex justify-content-between  align-items-center ">
-      <div style={{ width: "50%" }} className=" p-5 ">
-        <p>
-          تمنسشاي سشي سشميت سشي تمسنش يسش ي شسيتسش ي تمنسشاي سشي سشميت سشي تمسنش
-          يسش ي شسيتسش ي
-        </p>
+      <div style={{ width: "50%" }} className="main_text p-5 ">
+        <img
+          src={Mainman}
+          alt=""
+          style={{
+            position: "fixed",
+            top: "23%",
+            right: "-12% ",
+            bottom: 0,
+            height: "350px",
+          }}
+        />
+        <div style={{marginRight:"60px"}}>
+          <h3>السلام عليكم </h3>
+            <p>
+            إن العلم الشرعي من اهم العلوم فتم تجميع وتلخيص جميع ابحاث الكتب
+            الشرعية
+          </p>
+        </div>
       </div>
-      <div
-        style={{ width: "50%" }}
-      >
-        <img width={"100%"} src={main_image} alt=""  />
-     
+      <div style={{ width: "50%", height: "30%" ,boxShadow:"0 0px 8px 1px "}}>
+        <img width={"100%"} height={"100%"} src={main_image} alt="" />
       </div>
     </div>
   );
