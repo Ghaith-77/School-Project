@@ -1,6 +1,6 @@
 import React from "react";
 
-const Words = () => {
+const Words = ({ words }) => {
   return (
     <div
       className="border shadow "
@@ -8,13 +8,16 @@ const Words = () => {
         borderRadius: "20px",
         backgroundColor: "rgb(238, 238, 238)",
         padding: "20px",
-        width: "50%",
       }}
     >
-      <div className="d-flex align-content-center ">
-        <h4 style={{ marginLeft: "5px", color: "green" }}>(الصلاة):</h4>
-        <p style={{fontSize:"20px"}}>الدعاء</p>
-      </div>
+      {words.map((e) => {
+        return (
+          <div className="d-flex align-content-center ">
+            <h4 style={{ marginLeft: "5px", color: "green" }}>{e.word}:</h4>
+            <p style={{ fontSize: "20px" }}>{e.maen}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };

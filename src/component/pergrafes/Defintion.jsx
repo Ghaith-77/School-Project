@@ -1,6 +1,6 @@
 import React from "react";
 
-const Defintion = () => {
+const Defintion = ({ difind }) => {
   return (
     <div
       className="border shadow "
@@ -8,15 +8,16 @@ const Defintion = () => {
         borderRadius: "20px",
         backgroundColor: "rgb(238, 238, 238)",
         padding: "20px",
-        width: "50%",
       }}
     >
-      <div className="d-flex">
-        <h5 style={{marginLeft:"4px"}}>الصلاة: </h5>
-        <p>
-          سشي شسي شس يش سي سش يصض ق بصث لقف ا فغت 
-        </p>
-      </div>
+      {difind.map((e) => {
+        return (
+          <div className="d-flex">
+            <h5 style={{ marginLeft: "4px",color:"green" }}>{e.title}: </h5>
+            <p>{e.difind}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };

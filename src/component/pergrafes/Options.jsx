@@ -1,6 +1,6 @@
 import React from "react";
 
-const Options = () => {
+const Options = ({ options }) => {
   return (
     <div
       className="border shadow "
@@ -8,16 +8,22 @@ const Options = () => {
         borderRadius: "20px",
         backgroundColor: "rgb(238, 238, 238)",
         padding: "20px",
-        width: "30%",
+        width:"60%"
       }}
     >
       <div className="d-flex flex-column align-items-start justify-content-center">
-        <h4>اركان الصلاة : </h4>
-        <ul style={{marginRight:"20px"}}>
-          <li className="mt-2">النية</li>
-          <li className="mt-2">النية</li>
-          <li className="mt-2">النية</li>
-        </ul>
+        {options.map((e) => {
+          return (
+            <>
+              <h4 style={{color:"green"}}>{e?.title} : </h4>
+              <ul style={{ marginRight: "20px" }}>
+                {e?.options?.map((o) => {
+                  return <li className="mt-2">{o}</li>;
+                })}
+              </ul>
+            </>
+          );
+        })}
       </div>
     </div>
   );
