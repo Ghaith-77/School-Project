@@ -27,7 +27,7 @@ a{
 }
 .page {
   height: max-content;
-  min-height: 70vh;
+  min-height: 70vh; 
 }
 .app {
   background-color: #ffff;

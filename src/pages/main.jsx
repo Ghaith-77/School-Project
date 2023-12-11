@@ -12,7 +12,7 @@ const Main = () => {
           style={{
             position: "fixed",
             top: "23%",
-            right: "-12% ",
+            right: "-11% ",
             bottom: 0,
             height: "350px",
           }}
