@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import main_image from "../images/mainBackground.jpg";
 import Mainman from "../images/mainMan.jpeg";
-import data from "../data.json";
 import { useEffect } from "react";
 const Main = () => {
-  // console.log(data);
-  // console.log(data[0].id);
-
   return (
     <div className="container page d-flex justify-content-between  align-items-center ">
       <div style={{ width: "50%" }} className="main_text p-5 ">
