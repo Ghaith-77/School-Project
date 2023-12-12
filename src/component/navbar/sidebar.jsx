@@ -22,7 +22,7 @@ function Sidebar() {
           border: "none",
           color: "white",
         }}
-        onClick={handleShow}
+        onClick={()=>navi("./resourses")}
         className="me-2"
       >
         المصادر
