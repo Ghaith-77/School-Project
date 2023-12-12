@@ -11,7 +11,11 @@ function Sidebar() {
   function HandelLiClicked(id) {
     console.log(id);
     navi(`./subjectDetails/${id}`);
-    setShow(false)
+    setShow(false);
+  }
+  function personhandel(params) {
+    navi(`./person`);
+    setShow(false);
   }
   return (
     <div>
@@ -22,7 +26,7 @@ function Sidebar() {
           border: "none",
           color: "white",
         }}
-        onClick={()=>navi("./resourses")}
+        onClick={() => navi("./resourses")}
         className="me-2"
       >
         المصادر
@@ -52,7 +56,12 @@ function Sidebar() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div style={{ padding: "20px" }}>
-            <a  style={{ color: "black",cursor:"pointer" }} onClick={()=>{navi(`./`);}}>
+            <a
+              style={{ color: "black", cursor: "pointer" }}
+              onClick={() => {
+                navi(`./`);
+              }}
+            >
               الصفحة الرئيسية{" "}
             </a>
             <ul className="subjects">
@@ -65,7 +74,7 @@ function Sidebar() {
                         HandelLiClicked("pray");
                       }}
                     >
-                      <a    >الصلاة</a>
+                      <a>الصلاة</a>
                     </li>
                   </ul>
                 </details>
@@ -93,7 +102,7 @@ function Sidebar() {
                         HandelLiClicked("inheretens");
                       }}
                     >
-                      <a    >الورثة</a>
+                      <a>الورثة</a>
                     </li>
                   </ul>
                 </details>
@@ -108,7 +117,7 @@ function Sidebar() {
                         HandelLiClicked("books");
                       }}
                     >
-                      <a    >الكتب السماوية</a>
+                      <a>الكتب السماوية</a>
                     </li>
                   </ul>
                 </details>
@@ -122,7 +131,7 @@ function Sidebar() {
                         HandelLiClicked("go");
                       }}
                     >
-                      <a    >الهجرة</a>
+                      <a>الهجرة</a>
                     </li>
                   </ul>
                 </details>
@@ -136,12 +145,25 @@ function Sidebar() {
                         HandelLiClicked("discase");
                       }}
                     >
-                      <a    >الحوار</a>
+                      <a>الحوار</a>
                     </li>
                   </ul>
                 </details>
               </li>
             </ul>
+            <button
+              style={{
+                marginTop: "20px",
+                backgroundColor: "#eec15b",
+                padding: "5px 40px",
+                border: "none",
+                color: "white",
+              }}
+              onClick={() => personhandel("./person")}
+              className="me-2"
+            >
+              القائمين على المشروع
+            </button>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
