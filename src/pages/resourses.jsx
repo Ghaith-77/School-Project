@@ -18,7 +18,7 @@ const Resourses = () => {
           {bookdata.map((e) => {
             return (
               <tr className="row ">
-                <td className="col-4 p-3">{e.title}</td>
+                <td className="col-4 p-3">{e.object}</td>
                 <td className="col-4 p-3">{e.book}</td>
                 <td className="col-4 p-3">{e.person}</td>
               </tr>

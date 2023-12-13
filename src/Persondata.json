@@ -1,0 +1,46 @@
+[
+    {
+        "name":"غيث صوان",
+        "job":"مبرمج",
+        "img":"logo.jpeg",
+        "facebook":"https://www.facebook.com/gaes.sy.37/",
+        "instegram":"https://www.instagram.com/ghaith_sawan7/"
+    },
+    {
+        "name":"اويس اسطاس ",
+        "job":"جامع معلومات ",
+        "img":"logo.jpeg",
+        "facebook":"https://www.facebook.com/profile.php?id=100071858751051"
+
+    },
+    {
+        "name":"غبيث قاسم ",
+        "job":"مصمم",
+        "img":"logo.jpeg",
+        "facebook":"https://www.facebook.com/profile.php?id=100030106459772"
+
+    },
+    {
+        "name":"كنان كامل ",
+        "job":"مصمم",
+        "img":"logo.jpeg",
+        "facebook":"https://www.facebook.com/gaes.sy.37/"
+
+        
+    },
+    {
+        "name":"زيد العاقل  ",
+        "job":"جامع معلومات",
+        "img":"logo.jpeg",
+        "facebook":"https://www.facebook.com/gaes.sy.37/"
+
+    },
+    {
+        "name":"احمد نجم ",
+        "job":"جامع معلومات",
+        "img":"logo.jpeg",
+        "facebook":"https://www.facebook.com/gaes.sy.37/"
+
+
+    }
+]

@@ -11,14 +11,14 @@ const Options = ({ options }) => {
         width:"60%"
       }}
     >
-      <div className="d-flex flex-column align-items-start justify-content-center">
+      <div className="d-flex flex-column align-items-start justify-content-start">
         {options.map((e) => {
           return (
             <>
               <h4 style={{color:"green"}}>{e?.title} : </h4>
               <ul style={{ marginRight: "20px" }}>
                 {e?.options?.map((o) => {
-                  return <li className="mt-2">{o}</li>;
+                  return <li className="mt-2 ">{o}</li>;
                 })}
               </ul>
             </>

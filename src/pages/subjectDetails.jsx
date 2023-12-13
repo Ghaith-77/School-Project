@@ -18,17 +18,21 @@ const SubjectDetails = () => {
   // console.log(res);
 
   return (
-    <div className="container page  text-center ">
+    <div className="container page   ">
       {res?.map((e) => {
         return (
           <>
-            <h1 className="p-5  ">{e?.name}</h1>
-            <div className=" ">
+            <h1 className="p-5 text-center ">{e?.name}</h1>
+            <div className=" text-center">
               <Aya dalel={e?.content?.dalel} />
             </div>
             <div className="info  pt-5 gap-5 d-flex flex-wrap  justify-content-center">
-              <Words words={e?.content?.words} />
-              <Defintion difind={e?.content?.difind} />
+              {e?.content?.words ? <Words words={e?.content?.words} /> : ""}
+              {e?.content?.difind ? (
+                <Defintion difind={e?.content?.difind} />
+              ) : (
+                ""
+              )}
             </div>
             <div className="info  pt-5 gap-5 d-flex flex-wrap  justify-content-center">
               <Options options={e?.content?.options} />
