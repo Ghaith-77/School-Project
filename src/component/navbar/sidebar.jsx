@@ -124,11 +124,11 @@ function Sidebar() {
               </li>
               <li style={{ marginTop: "10px" }}>
                 <details style={{ color: "black" }}>
-                  <summary>سيرة</summary>
+                  <summary>علوم قران</summary>
                   <ul>
                     <li
                       onClick={() => {
-                        HandelLiClicked("go");
+                        HandelLiClicked("sieance books");
                       }}
                     >
                       <a>الهجرة</a>

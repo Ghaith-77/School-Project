@@ -18,28 +18,34 @@ const SubjectDetails = () => {
   // console.log(res);
 
   return (
-    <div className="container page   ">
+    <div className="container page ">
       {res?.map((e) => {
         return (
           <>
-            <h1 className="p-5 text-center ">{e?.name}</h1>
-            <div className=" text-center">
-              <Aya dalel={e?.content?.dalel} />
-            </div>
-            <div className="info  pt-5 gap-5 d-flex flex-wrap  justify-content-center">
-              {e?.content?.words ? <Words words={e?.content?.words} /> : ""}
-              {e?.content?.difind ? (
-                <Defintion difind={e?.content?.difind} />
-              ) : (
-                ""
-              )}
-            </div>
-            <div className="info  pt-5 gap-5 d-flex flex-wrap  justify-content-center">
-              <Options options={e?.content?.options} />
-            </div>
-            <div className="info  p-5 gap-5 ">
-              <Parts expline={e?.content?.expline} />
-            </div>
+            {e.content === "no content" ? (
+              (<div className="  text-center d-flex align-items-center justify-content-center"><h1>No content</h1></div>)
+            ) : (
+              <>
+                <h1 className="p-5 text-center ">{e?.name}</h1>
+                <div className=" text-center">
+                  <Aya dalel={e?.content?.dalel} />
+                </div>
+                <div className="info  pt-5 gap-5 d-flex flex-wrap  justify-content-center">
+                  {e?.content?.words ? <Words words={e?.content?.words} /> : ""}
+                  {e?.content?.difind ? (
+                    <Defintion difind={e?.content?.difind} />
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <div className="info  pt-5 gap-5 d-flex flex-wrap  justify-content-center">
+                  <Options options={e?.content?.options} />
+                </div>
+                <div className="info  p-5 gap-5 ">
+                  <Parts expline={e?.content?.expline} />
+                </div>
+              </>
+            )}
           </>
         );
       })}
