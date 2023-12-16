@@ -58,3 +58,7 @@ a {
   background-size: cover;
  */
 /*  */
+.imgcard{
+  width: 70% !important;
+  height: 70% !important;
+}
