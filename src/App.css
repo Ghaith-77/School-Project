@@ -58,7 +58,16 @@ a {
   background-size: cover;
  */
 /*  */
-.imgcard{
+.imgcard {
   width: 70% !important;
   height: 70% !important;
+}
+.CardImg {
+  width: 140px !important;
+  height: 140px !important;
+  overflow: hidden !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }

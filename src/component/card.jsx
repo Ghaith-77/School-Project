@@ -15,10 +15,17 @@ function Mycard() {
               justifyContent: "center",
               padding: "10px",
               width: "20rem",
-              overflow:"hidden"
+              overflow: "hidden",
             }}
           >
-            <Card.Img variant="top" src={e?.img} className="col-10 rounded-circle" />
+            <div className="CardImg">
+              <Card.Img
+                variant="top"
+                src={e?.img}
+                className="col-10 rounded-circle"
+                width={"100%"}
+              />
+            </div>
             <Card.Body className=" d-flex align-items-center justify-content-center text-center flex-column">
               <Card.Title className="my-2">{e.name}</Card.Title>
               <Card.Text className="my-2">
