@@ -67,6 +67,20 @@ function Sidebar() {
             <ul className="subjects">
               <li style={{ marginTop: "10px" }}>
                 <details style={{ color: "black" }}>
+                  <summary>علوم قران</summary>
+                  <ul>
+                    <li
+                      onClick={() => {
+                        HandelLiClicked("sieance books");
+                      }}
+                    >
+                      <a>الكتب السماوية</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li style={{ marginTop: "10px" }}>
+                <details style={{ color: "black" }}>
                   <summary>الفقه الشافعي</summary>
                   <ul>
                     <li
@@ -117,25 +131,12 @@ function Sidebar() {
                         HandelLiClicked("books");
                       }}
                     >
-                      <a>الكتب السماوية</a>
+                      <a>التوحيد </a>
                     </li>
                   </ul>
                 </details>
               </li>
-              <li style={{ marginTop: "10px" }}>
-                <details style={{ color: "black" }}>
-                  <summary>علوم قران</summary>
-                  <ul>
-                    <li
-                      onClick={() => {
-                        HandelLiClicked("sieance books");
-                      }}
-                    >
-                      <a>الهجرة</a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
+
               <li style={{ marginTop: "10px" }}>
                 <details style={{ color: "black" }}>
                   <summary>اداب الحوار</summary>
